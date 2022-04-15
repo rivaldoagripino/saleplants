@@ -1,5 +1,6 @@
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:saleplants/src/app_controller.dart';
+import 'package:saleplants/src/modules/home/home_module.dart';
 
 class AppModule extends Module {
   // static const ROUTE = '/bank';
@@ -12,6 +13,6 @@ class AppModule extends Module {
 
   @override
   List<ModularRoute> get routes => [
-        // ModuleRoute(ConnectionModule.ROUTE, module: ConnectionModule()),
+        ModuleRoute(HomeModule.ROUTE, module: HomeModule()),
       ];
 }
